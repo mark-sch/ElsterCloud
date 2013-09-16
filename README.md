@@ -1,7 +1,8 @@
- Geierlein
+ ElsterCloud
 ============
 
-by Stefan Siegl
+ein freier Elster Client zur Einreichung von  Umsatzsteuer Voranmeldungen und Dauerfristverlängerungen, 
+speziell für die Verwendung mit der kaufmännischen ERP Softwarelösung Finance5. ElsterCloud basiert auf demStefan Siegl
 
 Geierlein is a free (AGPL'ed) Elster client, i.e. an application that
 allows to send VAT declarations to Germany's fiscal authorities.
