@@ -2,37 +2,41 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Geierlein - der freie Elster-Client</title>
-    <meta name="author" content="Stefan Siegl <stesie@brokenpipe.de>">
+    <title>ElsterCloud - Elster Datenübermittlung für die kaufmännische Softwarelösung Finance5</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/geierlein.css" rel="stylesheet">
+    <link href="css/elstercloud.css" rel="stylesheet">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
 </head>
 <body class="native">
-    <div id="nav" class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="brand" href="#">
-                    <img src="img/geierlein-logo-color-white.png" alt="Geierlein Logo" />
-                </a>
-                <ul class="nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Formular
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
+            <div id="menu">
+                <ul>
+                    <li>
+                        <h2>
+                            Daten
+                        </h2>
+                        <ul>
                             <li><a href="#" id="form-import">Import ...</a></li>
                             <li><a href="#" id="form-export">Export ...</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" id="form-ustsvza">Dauerfristverlängerung</a></li>
-                    <li><a data-toggle="modal" href="#about">Info</a></li>
-                    <li><a href="http://stesie.github.io/geierlein/" target="_blank">Website</a></li>
+                 </ul>
+                 <ul>
+                    <li><h2><a href="#" id="form-ustsvza">Dauerfristverlängerung</a></h2></li>
+                 </ul>
+                 <ul>
+                    <li><h2><a data-toggle="modal" href="#about">Info</a></h2></li>
                 </ul>
             </div>
-        </div>
-    </div>
 
+    <div id="menu-status">
+       <span><a href="http://my.finance5.de" target="_new">Finance5 - Kaufmännische Softwarelösungen</a></span>
+    </div>
+    <div id="logo">
+       Elster<font color="#E53440">Cloud</font>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="page">
+    <div id="container-navigation"><h1>Umsatzsteuer Voranmeldung</h1></div>
     <div id="main" class="container">
         <form class="form-horizontal">
             <div class="accordion">
@@ -218,7 +222,7 @@
 
             <div class="form-actions">
                 <div class="buttons">
-                    <a id="schnell" href="#" class="btn" data-toggle="button"><i class="icon-resize-vertical"></i> Vollständiges Formular</a>
+                    <center><a id="schnell" href="#" class="btn" data-toggle="button"><i class="icon-resize-vertical"></i> Vollständiges Formular</a></center>
                 </div>
             </div>
 
@@ -663,8 +667,10 @@
 
             <div class="form-actions">
                 <div class="buttons">
+                    <center>
                     <a id="send" href="#" class="btn btn-primary">Daten senden</a>
                     <a id="send-testcase" href="#" class="btn">Als Testfall senden</a>
+                    </center>
                 </div>
             </div>
 
@@ -674,22 +680,17 @@
     <div class="modal hide" id="about">
         <div class="modal-header">
             <a class="close" data-dismiss="modal">×</a>
-            <h3>Über Geierlein</h3>
+            <h3>Über ElsterCloud</h3>
         </div>
         <div class="modal-body">
-            <p><a target="_blank" href="http://stesie.github.io/geierlein/">Geierlein</a>
-            ist ein in HTML5 und JavaScript entwickelter
-            <a target="_blank" href="https://www.elster.de/">Elster</a>-Client.</p>
+            <p><a target="_blank" href="http://github.com/mark-sch/ElsterCloud">ElsterCloud</a> ist ein freier <a target="_blank" href="https://www.elster.de/">Elster</a> Client zur elektronischen Einreichung von Umsatzsteuer Voranmeldungen und Dauerfristverlängerungen, speziell für die Verwendung mit der kaufmännischen ERP Softwarelösung Finance5. ElsterCloud basiert auf dem großartigen Open Source Projekt von Stefan Siegl, <a href="http://github.com/stesie/geierlein" target="_new">Geierlein</a>.
+            </p>
 
-            <p><a target="_blank" href="http://stesie.github.io/geierlein/">Geierlein</a>
-                ist freie Software. Du kannst es unter den
-                Bedingungen der <a target="_blank" href="http://opensource.org/licenses/AGPL-3.0">
-                GNU Affero General Public License</a>, wie von der
-                Free Software Foundation veröffentlicht, weitergeben und/oder
-                modifizieren, entweder gemäß Version 3 der Lizenz oder
-                (nach deiner Option) jeder späteren Version.</p>
+            <p><a target="_blank" href="http://github.com/mark-sch/ElsterCloud">ElsterCloud</a>
+                ist Open Source nach der <a target="_blank" href="http://opensource.org/licenses/AGPL-3.0">GNU AFFERO GENERAL PUBLIC LICENSE</a>.
+                </p>
 
-            <p>Copyright &copy; 2012, 2013 Stefan Siegl</p>
+            <p>Contribution Copyright &copy; 2013 Think5 GmbH.</p>
         </div>
         <div class="modal-footer">
             <a href="#" class="btn btn-primary" data-dismiss="modal">Schließen</a>
@@ -857,6 +858,17 @@
             <a href="#" class="btn" id="SVZ-send-testcase">Senden als Testfall</a>
             <a href="#" class="btn btn-primary" id="SVZ-send">Daten senden</a>
         </div>
+    </div>
+    </div>
+
+    <div id='footer'>
+       <div id='footer-left'>
+          &copy; 2013 <a href='http://www.think5.de' target='_new'>Think5 GmbH</a><br>
+          <a href='http://opensource.org/licenses/AGPL-3.0' target='new'>GNU AGPL Open Source</a> | <a href='http://github.com/mark-sch/ElsterCloud' target='new'>Fork me on GitHub</a>
+      </div>
+      <div id='footer-right'>
+         <a target='_blank' href='http://www.facebook.com/myFinance5'><img width='73' height='73' style='margin-left:10px;' src='f5-images/facebook.png'></a>
+      </div>
     </div>
 
     <form>
